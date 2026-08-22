@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.CSC202Task1.geoquiz.databinding.ActivityMainBinding
+import android.util.Log
 
+private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val questionBank = listOf(
@@ -17,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private var currentIndex = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate(Bundle?) called")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -35,6 +38,26 @@ class MainActivity : AppCompatActivity() {
             updateQuestion()
         }
         updateQuestion()
+    }
+        override fun onStart() {
+            super.onStart()
+            Log.d(TAG, "onStart() called")
+        }
+        override fun onResume() {
+            super.onResume()
+            Log.d(TAG, "onResume() called")
+        }
+        override fun onPause() {
+            super.onPause()
+            Log.d(TAG, "onPause() called")
+            }
+        override fun onStop() {
+            super.onStop()
+            Log.d(TAG, "onStop() called")
+        }
+        override fun onDestroy() {
+            super.onDestroy()
+            Log.d(TAG, "onDestroy() called")
     }
 
     private fun updateQuestion() {
