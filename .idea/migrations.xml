@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectMigrations">
+    <option name="MigrateToGradleLocalJavaHome">
+      <set>
+        <option value="$PROJECT_DIR$/../MEGA/MEGAsync/LibreOffice/My Documents/Code/CSC200/CSC202-Task1-Mobile-App-Activities" />
+      </set>
+    </option>
+  </component>
+</project>
