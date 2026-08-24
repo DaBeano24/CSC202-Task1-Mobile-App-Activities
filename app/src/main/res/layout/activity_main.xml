@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/prev_button"
-        android:drawableStart="@drawable/arrow_left"
+        android:drawableLeft="@drawable/arrow_left"
         android:drawablePadding="8dp" />
 
     <Button

@@ -28,7 +28,7 @@ class QuizViewModel(private val savedStateHandle: SavedStateHandle) : ViewModel(
         isCheater = false
     }
     fun moveToPrev() {
-        currentIndex = (currentIndex - 1) % questionBank.size
+        currentIndex = (currentIndex - 1 + questionBank.size) % questionBank.size
         isCheater = false
     }
 
